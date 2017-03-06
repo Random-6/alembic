@@ -90,15 +90,16 @@ disqus: "alembic-1"
 avatarurl: "http://1.gravatar.com/avatar/d491dca318828394f33ade2a1e32950a" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 port: 3000
 
- 8. Site navigation
+ # 8. Site navigation
 navigation_header:
-  Home: /cajamar_predective
+  Home: /
   Introduccion: /introduccion/
   Features: /features/
   Modelos: /modelos/
   Resultados: /resultados/
   Blog: /blog/
   Fork Alembic: https://github.com/Random-6/CajamarPredictive
+
 
 
 navigation_footer:
