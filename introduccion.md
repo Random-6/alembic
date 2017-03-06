@@ -6,7 +6,7 @@ feature_image: "https://unsplash.it/1300/400?image=1061"
 excerpt: "Análisis exploratorio de los datos y comprensión de negocio"
 ---
 
-En este primer apartado se presenta el análisis exploratorio de los datos del reto Microsoft Predictive Modelling de Cajamar. 
+<p align="justify">En este primer apartado se presenta el análisis exploratorio de los datos del reto Microsoft Predictive Modelling de Cajamar.</p>  
 
 **Introducción Cajamar**
 
