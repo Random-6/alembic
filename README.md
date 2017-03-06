@@ -1,11 +1,6 @@
 Este blog presenta los pasos y ideas seguidas para completar el Reto Microsoft Predictive Modelling de Cajamar. La primera fase de esta dataton se ha celebrado entre el 20 de febrero y el 10 de marzo. 
 
-{% include button.html text="Fork on GitHub" icon="github" link="https://github.com/Random-6/CajamarPredictive" %} 
-
 Para mas información sobre el reto consultar la web de [University Hack 2017](http://www.cajamardatalab.com/datathon-cajamar-universityhack-2017/) 
-
-{% include figure.html image="http://www.cajamardatalab.com/datathon-cajamar-universityhack-2017/img/logo-dark.png" %}
-
 
 
 ## Presentación 
