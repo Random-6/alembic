@@ -1,14 +1,3 @@
----
-title: Cajamar Reto Microsoft Predictive Modelling 
-feature_text: |
-  # Random6
-  Xisca Pericàs y Alexandra Abós
-  
-feature_image: "https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiX4c_r6cLSAhXEyRQKHdtiANsQjRwIBw&url=https%3A%2F%2Fwww.meetup.com%2Fes%2FDubytes%2Fevents%2F233906672%2F&bvm=bv.148747831,d.ZGg&psig=AFQjCNGbej8tYLZN_ZasnEANsl5pvT_DDQ&ust=1488922247655542"
-image: "https://alimentaria.world/wp-content/uploads/2016/02/cajamar_positivo_rgb"
-excerpt: "Presentación de los resultados obtenidos en el reto Microsoft Predictive Modelling de Cajamar"
----
-
 Este blog presenta los pasos y ideas seguidas para completar el Reto Microsoft Predictive Modelling de Cajamar. La primera fase de esta dataton se ha celebrado entre el 20 de febrero y el 10 de marzo. 
 
 {% include button.html text="Fork on GitHub" icon="github" link="https://github.com/Random-6/CajamarPredictive" %} 
