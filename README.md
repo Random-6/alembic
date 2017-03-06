@@ -1,16 +1,17 @@
 <p align="justify">
- 
-Este blog presenta los pasos y ideas seguidas para completar el Reto Microsoft Predictive Modelling de Cajamar. La primera fase de esta dataton se ha celebrado entre el 20 de febrero y el 10 de marzo. 
-
-Para mas información sobre el reto consultar la web de [University Hack 2017](http://www.cajamardatalab.com/datathon-cajamar-universityhack-2017/) 
-
+Este blog presenta los pasos y ideas seguidas para completar el Reto Microsoft Predictive Modelling de Cajamar. La primera fase de esta dataton se ha celebrado entre el 20 de febrero y el 10 de marzo. </p>
+<p align="justify">
+Para mas información sobre el reto consultar la web de [University Hack 2017](http://www.cajamardatalab.com/datathon-cajamar-universityhack-2017/) </p>
 
 ## Presentación 
 
-El objectivo de la competición es desarollar un modelo predictivo para proporcionar el siguiente producto a contratar por los clientes de la entidad bancaria Cajamar.
+<p align="justify">
+El objectivo de la competición es desarollar un modelo predictivo para proporcionar el siguiente producto a contratar por los clientes de la entidad bancaria Cajamar.</p>
 
-Se proporcionan dos datasets, train y test, que representan la compra de un producto (*Cod_Prod*) llevado a cabo por un customer (*ID_Customer*). En cada entrada se incluyen los datos demográficos del comprador y la fecha de compra. 
-La finalidad es predecir el siguiente producto que comprará cada cliente dada la última compra que se indica en el dataset de test.   
+<p align="justify">
+Se proporcionan dos datasets, train y test, que representan la compra de un producto (*Cod_Prod*) llevado a cabo por un customer (*ID_Customer*). En cada entrada se incluyen los datos demográficos del comprador y la fecha de compra.</p> 
+<p align="justify">
+La finalidad es predecir el siguiente producto que comprará cada cliente dada la última compra que se indica en el dataset de test.</p>   
 
 Los resultados se presentan en el esquema siguiente:
 
@@ -20,4 +21,4 @@ Los resultados se presentan en el esquema siguiente:
 - Justificación de la estrategia y modelos elegidos. 
 - Conclusiones
 
-</p>
+
