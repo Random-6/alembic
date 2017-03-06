@@ -83,7 +83,7 @@ encoding: utf-8 # Make sure the encoding is right
 title: “Random6” # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
 description: “Discusión de los resultados obtenidos en el reto Microsoft Predictive Modelling de Cajamar” # Site description and default description, also used in jekyll-seo-tag
-url: "https://random-6.github.io/CajamarPredictive/" # Site url, also used in jekyll-seo-tag
+url: "https://random-6.github.io/cajamar_predective/" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/Random-6/CajamarPredictive"
 email: “alexandraabos@gmail.com”
 disqus: "alembic-1"
@@ -101,14 +101,14 @@ navigation_header:
   Fork Alembic: https://github.com/Random-6/CajamarPredictive
 
 navigation_footer:
-  Created by Random6: https://random-6.github.io/CajamarPredictive/
+  Created by Random6: https://random-6.github.io/cajamar_predective/
 
 social_links:
   Twitter: https://twitter.com/alexx_abos
   LinkedIn: https://www.linkedin.com/in/alexandra-ab%C3%B3s-ortega-3167a994/
   LinkedIn: https://www.linkedin.com/in/maria-francisca-peric%C3%A0s-19338ba6/
-  GitHub: https://random-6.github.io/CajamarPredictive/
-  link: https://random-6.github.io/CajamarPredictive/
+  GitHub: https://github.com/Random-6/CajamarPredictive
+  link: https://random-6.github.io/cajamar_predective/
 
 sharing_links:
   Twitter: "#1DA1F2"
