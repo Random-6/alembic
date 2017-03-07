@@ -4,7 +4,7 @@ feature_text: |
   # Random6
   Xisca Pericàs y Alexandra Abós
   
-feature_image: "http://freakelitex.com/wp-content/uploads/2015/04/digimon-tri-key1-cropped.jpg"
+feature_image: "http://www.rozemerry.at/blog/wp-content/uploads/2016/11/digimon.jpg"
 image: "https://alimentaria.world/wp-content/uploads/2016/02/cajamar_positivo_rgb"
 excerpt: "Presentación de los resultados obtenidos en el reto Microsoft Predictive Modelling de Cajamar"
 ---
