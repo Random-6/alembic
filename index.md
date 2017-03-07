@@ -4,7 +4,7 @@ feature_text: |
   # Random6
   Xisca Pericàs y Alexandra Abós
   
-feature_image: "https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiX4c_r6cLSAhXEyRQKHdtiANsQjRwIBw&url=https%3A%2F%2Fwww.meetup.com%2Fes%2FDubytes%2Fevents%2F233906672%2F&bvm=bv.148747831,d.ZGg&psig=AFQjCNGbej8tYLZN_ZasnEANsl5pvT_DDQ&ust=1488922247655542"
+feature_image: "http://2.bp.blogspot.com/-stBgRVi7_DY/VlxcJ2e1mpI/AAAAAAAAUwI/3ebb9BzNyds/s1600/Digimon_Adventure_Tri_Critica_Rincon_Paginas_Toei_Animation_Carmelo_Beltran"
 image: "https://alimentaria.world/wp-content/uploads/2016/02/cajamar_positivo_rgb"
 excerpt: "Presentación de los resultados obtenidos en el reto Microsoft Predictive Modelling de Cajamar"
 ---
