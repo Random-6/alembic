@@ -4,8 +4,8 @@ feature_text: |
   # Random6
   Xisca Pericàs y Alexandra Abós
   
-feature_image: "http://www.rozemerry.at/blog/wp-content/uploads/2016/11/digimon.jpg"
-image: "https://alimentaria.world/wp-content/uploads/2016/02/cajamar_positivo_rgb"
+feature_image: "/cajamar_predictive/images/fondo.png"
+image: "/cajamar_predictive/images/fondo.png"
 excerpt: "Presentación de los resultados obtenidos en el reto Microsoft Predictive Modelling de Cajamar"
 ---
 
@@ -23,7 +23,7 @@ Para mas información sobre el reto consultar la web de [University Hack 2017](h
 
 <p align="justify">El objectivo de la competición es desarollar un modelo predictivo para proporcionar el siguiente producto a contratar por los clientes de la entidad bancaria Cajamar.</p> 
 
-<p align="justify">Se proporcionan dos datasets, train y test, que representan la compra de un producto (*Cod_Prod*) llevado a cabo por un customer (*ID_Customer*). En cada entrada se incluyen los datos demográficos del comprador y la fecha de compra. 
+<p align="justify">Se proporcionan dos datasets, train y test, que representan la compra de un producto (<b>Cod_Prod</b>) llevado a cabo por un customer (<b>ID_Customer</b>). En cada entrada se incluyen los datos demográficos del comprador y la fecha de compra. 
 La finalidad es predecir el siguiente producto que comprará cada cliente dada la última compra que se indica en el dataset de test.</p>    
 
 Los resultados se presentan en el esquema siguiente:
