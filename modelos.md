@@ -34,7 +34,10 @@ En este apartado se presenta la selección de models aplicados y su optimizació
 
 ### 1. Modelos 
 
-<p align="justify">Como se ha comentado anteriormente, los modelos usados en este proyecto son básicamente el Distributed Random Forest (DRF) y el Gradient Boosted Machine (GBM). Se han seleccionado ambos modelos debido a que son ampliamente conocidos por su buena performance en problemas de clasificación, además de por su fácil interpretabilidad. Para leer más detalles sobre su implementación dentro de la plataforma h2o se puede consultar la documentación de dicha plataforma:</p>  [h2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science.html)
+<p align="justify">Como se ha comentado anteriormente, los modelos usados en este proyecto son básicamente el Distributed Random Forest (DRF) y el Gradient Boosted Machine (GBM). Se han seleccionado ambos modelos debido a que son ampliamente conocidos por su buena performance en problemas de clasificación, además de por su fácil interpretabilidad. Para leer más detalles sobre su implementación dentro de la plataforma h2o se puede consultar la documentación de dicha plataforma:</p> 
+<a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science.html"><img src="fig13.jpg">
+
+[h2o](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science.html)
 
 <p align="justify">En el caso particular, se ha hecho un split del dataset disponible en train.set (80%) y test.set (20%). El split se ha hecho en función del customer ID y sin tener en cuenta la fecha de la última compra. El dataset está claramente no balanceado ya que un 1.06% de las muestras son positivos (compra) mientras que un 98% son negativos (no compra). Por tanto, un factor importante a tener en cuenta en los modelos es el balanceado. En el caso particular se han balanceado los datasets haciendo un oversampling de la categoria minoritaría con una relación de 1:4. Además se ha usado la validación cruzada (o cross validación) para la realización del modelo.</p>  
 
