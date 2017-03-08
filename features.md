@@ -27,7 +27,7 @@ Es importante tener en cuenta para quien se esta haciendo este modelo predictivo
 
 A partir de las variables dadas también se pueden crear de otras para enriquecer la base. 
 
-Primero de todo, tal y como se vio en el análisis exploratorio de los datos, hay mucha información temporal que nos puede ser útil. Así pues, podemos utilizar las variables creadas en el apartado anterior, como <b>mes</b> y <b>año</b>, <b>tiempo desde primera compra</b>, <b>tiempo desde última compra<b> y <b>tiempo medio entre compras<b>. Otro concepto interesante es saber cuantos productos ha comprado cada customer por mes, ya que así se intenta modelizar el hecho que hay productos que se compran mas en épocas determinadas y usuarios que tienden a compran más en determinados meses. 
+Primero de todo, tal y como se vio en el análisis exploratorio de los datos, hay mucha información temporal que nos puede ser útil. Así pues, podemos utilizar las variables creadas en el apartado anterior, como <b>mes</b> y <b>año</b>, <b>tiempo desde primera compra</b>, <b>tiempo desde última compra<b> y <b>tiempo medio entre compras</b>. Otro concepto interesante es saber cuantos productos ha comprado cada customer por mes, ya que así se intenta modelizar el hecho que hay productos que se compran mas en épocas determinadas y usuarios que tienden a compran más en determinados meses. 
 
 A parte de las variables temporales, también se puede introducir información de los productos comprados anteriormente, ya que se ha visto que hay productos que se tienden a comprar juntos o de manera consecutiva, así que tener en cuenta los productos comprados previamente es también importante. 
 
