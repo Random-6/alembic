@@ -32,9 +32,6 @@ Recordemos que variables tienen estos datasets:
 <p align="justify">A parte de las variables temporales, también se puede introducir información de los productos comprados anteriormente, ya que se ha visto que hay productos que se tienden a comprar juntos o de manera consecutiva, así que tener en cuenta los productos comprados previamente es también importante.</p> 
 
 
-### Otras variables
-
-
 #### Cluster de productos
 
 <p align="justify">Una primera aproximación es hacer un clustering para ver si se agrupan los productos y podemos hacer una variable <b>cluster por producto</b>. Para hacer el clustering se utiliza el paqueta h2o, ya que tiene funciones optimizadas para trabajar con algoritmos de machine learning.</p> 

@@ -1,5 +1,4 @@
 ---
----
 title: Resultados
 feature_text: |
   Resultados del modelo predictivo
