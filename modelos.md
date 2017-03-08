@@ -2,8 +2,8 @@
 title: Modelos
 feature_text: |
   Modelos de predicción
-feature_image: "https://unsplash.it/1300/400?image=1061"
-excerpt: "Explicación modelos empleados"
+feature_image: "/cajamar_predictive/images/fondo.png"
+image: "/cajamar_predictive/images/fondo.png"
 ---
 En este apartado se presenta la selección de models aplicados y su optimización.  
 
