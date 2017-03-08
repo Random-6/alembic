@@ -81,22 +81,19 @@ Para evaluar las variables sociodemográficas de manera dinámica se ha preparad
 
 
 ### Obtener información con la fecha de compra
-<p align="justify">
-Una vez comprovado que el dataset de train y el de test tiene una distribución de año de compras similar, es útil saber si los productos se venden aproximadamente en los mismos periodos de tiempo entre el dataset train y test, ya que nos puede servir para establecer etiquetas de productos viejos y nuevos. </p> 
+<p align="justify">Una vez comprovado que el dataset de train y el de test tiene una distribución de año de compras similar, es útil saber si los productos se venden aproximadamente en los mismos periodos de tiempo entre el dataset train y test, ya que nos puede servir para establecer etiquetas de productos viejos y nuevos. </p> 
 
 <p align="justify">Primero de todo se calcula los años que hay entre la primera compra y la última de cada producto, para establecer su rango de compra en cada dataset. Posteriormente se comparan los dos datasets para saber si los productos de los dos datasets se ofrecen en el mismo periodo. </p>
 
-{% include figure.html image="/cajamar_predictive/images/p2.png"%}
+{% include figure.html image="/cajamar_predictive/images/p2.png" position="left" %}
 
-<p align="justify">
-Se puede observar que los productos no aparecen en los dos datasets exactamente en el mismo rango de años. Hay un producto en concreto, el 1002, que aparece en el test 29 años antes que en el train, y dos mas, el 704 y el 2503, que aprecen 12 y 11 años antes en el train que en el test, respectivamente. Así pues, aunque mayormente el periodo en que aparecen los productos en el test y el train es parecido, no es muy apropiado basarnos en las fechas de inicio y final de aparición de productos en el train para definir este rango en el test, ya que puede variar. </p>
+<p align="justify">Se puede observar que los productos no aparecen en los dos datasets exactamente en el mismo rango de años. Hay un producto en concreto, el 1002, que aparece en el test 29 años antes que en el train, y dos mas, el 704 y el 2503, que aprecen 12 y 11 años antes en el train que en el test, respectivamente. Así pues, aunque mayormente el periodo en que aparecen los productos en el test y el train es parecido, no es muy apropiado basarnos en las fechas de inicio y final de aparición de productos en el train para definir este rango en el test, ya que puede variar. </p>
 
 #### Hay productos que se venden mas en determinadas epocas del año?
 
-<p align="justify">
-Mirando el efecto temporal, tambien es importante visualizar si hay productos que se tienden a comprar más en algunas épocas del año en concreto. </p>
+<p align="justify">Mirando el efecto temporal, tambien es importante visualizar si hay productos que se tienden a comprar más en algunas épocas del año en concreto. </p>
 
-{% include figure.html image="/cajamar_predictive/images/p3.png"%}
+{% include figure.html image="/cajamar_predictive/images/p3.png" position="left" %}
 
 <p align="justify">
 Se puede observar que sí que hay productos que se venden en épocas determinadas. Puede ser interesante añadir esta información en los modelos. </p>
@@ -106,7 +103,7 @@ Se puede observar que sí que hay productos que se venden en épocas determinada
 <p align="justify">
 Otra idea interesante a explorar es identificar si hay algunos productos que se vendan juntos. Hemos podido detectar que hay dos productos, el 9993 y el 9991, que tienen cada año el mismo número de compras. Así pues, es indicado suponer que se deben vender juntos o de manera consecutiva. Así pues, si en el test hay usuarios que han comprado uno de los dos productos y no tienen el otro, se les puede recomendar. </p> 
 
-{% include figure.html image="/cajamar_predictive/images/p4a.png"%}
+{% include figure.html image="/cajamar_predictive/images/p4a.png" position="left" %}
 
 
 ### Variables relacionadas con el customer 
@@ -116,14 +113,14 @@ Ahora queremos ver como actua cada customer, por ejemplo, es un customer que com
 
 #### Cuantos productos han comprado los customers?
 
-{% include figure.html image="/cajamar_predictive/images/p4.png"%}
+{% include figure.html image="/cajamar_predictive/images/p4.png" position="left" %}
 
 <p align="justify">
 Podemos ver que la gran mayoria de customers compran entre 1-4 productos. </p>
 
 #### Y de los que solo han comprado un producto, que productos predominan?
 
-{% include figure.html image="/cajamar_predictive/images/p5.png"%}
+{% include figure.html image="/cajamar_predictive/images/p5.png" position="left" %}
 
 <p align="justify">
 Se puede ver pues que el *601* destaca en esos usuarios que solo han comprado uno, y ya con menos productos, el *301*, el *201* y el *2302*. </p>
@@ -131,14 +128,14 @@ Se puede ver pues que el *601* destaca en esos usuarios que solo han comprado un
 <p align="justify">
 Tambien se pueden evaluar los productos comprados por customers que compran mucho (> 10 productos).</p>
 
-{% include figure.html image="/cajamar_predictive/images/p6.png"%}
+{% include figure.html image="/cajamar_predictive/images/p6.png" position="left" %}
 
 <p align="justify">
 El producto *601* sigue siendo muy alto, pero a él se unen también otros productos como el *201* y el *301*, el *2302* y la pareja formada por el *9991* y *9993*.</p> 
 
 #### Y de los productos que se compran juntos (lag=0), que parejas predominan?*
 
-{% include figure.html image="/cajamar_predictive/images/p7.png"%}
+{% include figure.html image="/cajamar_predictive/images/p7.png" position="left" %}
 
 
 <p align="justify">
@@ -147,12 +144,12 @@ El conjunto predomina más es el de 201-601, seguido de 601-2302, 301-601 y 201-
 <p align="justify">
 Por otra parte, es de esperar que haya customers que tiendan a comprar más en unos meses que en otros, así que también es interesante mirar si hay este efecto. </p>
 
-{% include figure.html image="/cajamar_predictive/images/p8.png"%}
+{% include figure.html image="/cajamar_predictive/images/p8.png" position="left" %}
 
 <p align="justify">
 Por otro lado, fijandonos en el tiempo de compras, podemos generar los siguientes gráficos:</p> 
 
-{% include figure.html image="/cajamar_predictive/images/p9.png"%}
+{% include figure.html image="/cajamar_predictive/images/p9.png" position="left" %}
 
 <p align="justify">
 La mayoria de customers tienen aproximadamente un tiempo medio desde la primera compra de 5000 dias (14 años), un tiempo medio desde la última compra de 2222 (7 años) y un lag entre compras de 1200 (3 años). 
@@ -163,7 +160,7 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 <p align="justify">
 Otra idea interesante es mirar la relación entre un producto y el anterior comprado, es decir, si después de comprar uno se tiende a comprar otro en concreto. Para mirar esta idea se cogen los últimos y penúltimos productos de cada customer, para ver que parejas de productos se compran más seguidas.  
 </p>
-{% include figure.html image="/cajamar_predictive/images/p10.png"%}
+{% include figure.html image="/cajamar_predictive/images/p10.png" position="left" %}
 
 
 <p align="justify">
