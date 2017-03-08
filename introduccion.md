@@ -66,17 +66,16 @@ Para evaluar las variables sociodemográficas de manera dinámica se ha preparad
 
 <p align="justify">Primero nos fijamos en la información que nos da la fecha de compra. Podemos ver que los años de compra se distribuyen de manera muy parecida en los dos datasets. Es interesante observar que tenemos tanto entradas antiguas como entradas mas recientes, aunque predominan las mas nuevas. Si tenemos en cuenta la evolución de Cajamar, tiene sentido que en los años recientes haya un mayor número de entradas, ya que coincide con la expansión y fusión de la entidad.  En los primeros años hay pocas compras y a medida que avanzamos van augmentando y el incremento más significativo se encuentra a partir del 2000 en ambos datasets. Por otro lado, los dos datsets tiene una distribución de compras por mes variable, con un máximo en marzo. Así pues, parece ser que temporalmente tienes características muy similares.</p>
 
-<p align="justify">Ahora nos fijamos en las variables sociodemográficas.</p>
-<p align="justify">Comparando las variables del train y del test podemos comprovar que, igual que pasaba en la información temporal, también se han mantenido las proporciones en las variables sociodemográficas.</p>  
-<p align="justify">- El rango de edad predominante en los dos datasets es el 4º, de  >= 45 años y Edad < 65 años, seguido del 3º, >= 30 años y Edad < 45 años.</p> 
-<p align="justify">- Los rango de antigüedad mayores en los dos datasets son el 4º y el 5º, de 10-20 años y >= 20 años.</p> 
-<p align="justify">- En los ingresos encontramos diferencias en los datasets. En el train predominan los customers con 2º, de >= 6.000-12.000€, y seguidos muy de cerca por los del 3º 12.000-24.000€. En cambio, en el test primero hay del 3ª y luego del 5º, de >= 32.000 €. Así pues, en el dataset de test parece que hay customers con ingresos más altos.</p> 
-<p align="justify">- En el género también hay diferencias, ya que en el dataset de train hay más hombres y en el dataset de test más mujeres, concretamente 44.3M-55.7H, en el train, y 61.12M-38.88H en el test.</p> 
-<p align="justify">- Finalmente, respecto al segmento de los customers, ambos datasets tienen mayoritariamente a particulares.</p> 
+<p align="justify">Ahora nos centramos en las variables sociodemográficas.Comparando las variables del train y del test podemos comprovar que, igual que pasaba en la información temporal, también se han mantenido las proporciones en las variables sociodemográficas.</p>  
+<p align="justify"> El rango de edad predominante en los dos datasets es el 4º, de  >= 45 años y Edad < 65 años, seguido del 3º, >= 30 años y Edad < 45 años.</p> 
+<p align="justify"> Los rango de antigüedad mayores en los dos datasets son el 4º y el 5º, de 10-20 años y >= 20 años.</p> 
+<p align="justify"> En los ingresos encontramos diferencias en los datasets. En el train predominan los customers con 2º, de >= 6.000-12.000€, y seguidos muy de cerca por los del 3º 12.000-24.000€. En cambio, en el test primero hay del 3ª y luego del 5º, de >= 32.000 €. Así pues, en el dataset de test parece que hay customers con ingresos más altos.</p> 
+<p align="justify"> En el género también hay diferencias, ya que en el dataset de train hay más hombres y en el dataset de test más mujeres, concretamente 44.3M-55.7H, en el train, y 61.12M-38.88H en el test.</p> 
+<p align="justify"> Finalmente, respecto al segmento de los customers, ambos datasets tienen mayoritariamente a particulares.</p> 
 
 <p align="justify">Así pues, con esta exploración hemos podido hacernos una idea general de los dos datasets, sus parecidos y diferencias.</p> 
 
-## Analisis de nuevas variables
+## Análisis de nuevas variables
 
 <p align="justify">Ahora nos interesa aprofundir en ciertas variables, para poder sacar más información de los datasets. </p>
 
