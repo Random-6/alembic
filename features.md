@@ -8,7 +8,7 @@ image: "/cajamar_predictive/images/fondo.png"
 
 En este apartado se explican qué variables se introducen en los modelos predictivos. 
 
-##### Son todas las variables necesarias?
+### Son todas las variables necesarias?
 
 Recordemos que variables tienen estos datasets:
 
