@@ -51,21 +51,30 @@ Para evaluar las variables sociodemográficas de manera dinámica se ha preparad
 
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2I5MzM5MTUtZWZhMi00MmNlLWI0NmEtMjEwOTY1NWMzOTZjIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
-*CONCLUSIONS!!!!*
+<p align="justify">Primero nos fijamos en la información que nos da la fecha de compra. Podemos ver que los años de compra se distribuyen de manera muy parecida en los dos datasets. Es interesante observar que tenemos tanto entradas antiguas como entradas mas recientes, aunque predominan las mas nuevas. Si tenemos en cuenta la evolución de Cajamar, tiene sentido que en los años recientes haya un mayor número de entradas, ya que coincide con la expansión y fusión de la entidad.  En los primeros años hay pocas compras y a medida que avanzamos van augmentando y el incremento más significativo se encuentra a partir del 2000 en ambos datasets. Por otro lado, los dos datsets tiene una distribución de compras por mes variable, con un máximo en marzo. Así pues, parece ser que temporalmente tienes características muy similares.</p>
+
+<p align="justify">Ahora nos fijamos en las variables sociodemográficas.</p>
+<p align="justify">Comparando las variables del train y del test podemos comprovar que, igual que pasaba en la información temporal, también se han mantenido las proporciones en las variables sociodemográficas.</p>  
+p align="justify">- El rango de edad predominante en los dos datasets es el 4º, de  >= 45 años y Edad < 65 años, seguido del 3º, >= 30 años y Edad < 45 años.</p> 
+p align="justify">- Los rango de antigüedad mayores en los dos datasets son el 4º y el 5º, de 10-20 años y >= 20 años.</p> 
+p align="justify">- En los ingresos encontramos diferencias en los datasets. En el train predominan los customers con 2º, de >= 6.000-12.000€, y seguidos muy de cerca por los del 3º 12.000-24.000€. En cambio, en el test primero hay del 3ª y luego del 5º, de >= 32.000 €. Así pues, en el dataset de test parece que hay customers con ingresos más altos.</p> 
+p align="justify">- En el género también hay diferencias, ya que en el dataset de train hay más hombres y en el dataset de test más mujeres, concretamente 44.3M-55.7H, en el train, y 61.12M-38.88H en el test.</p> 
+p align="justify">- Finalmente, respecto al segmento de los customers, ambos datasets tienen mayoritariamente a particulares.</p> 
+
+<p align="justify">Así pues, con esta exploración hemos podido hacernos una idea general de los dos datasets, sus parecidos y diferencias.</p> 
+
+## Analisis de nuevas variables
+
+<p align="justify">Ahora nos interesa aprofundir en ciertas variables, para poder sacar más información de los datasets. </p>
 
 
 ### Obtener información con la fecha de compra
 <p align="justify">
-Una comprovación importante es saber si el dataset de test tiene una distribución de año de compras similar al dataset de train. Vamos a mirarlo.</p> 
+Una vez comprovado que el dataset de train y el de test tiene una distribución de año de compras similar, es útil saber si los productos se venden aproximadamente en los mismos periodos de tiempo entre el dataset train y test, ya que nos puede servir para establecer etiquetas de productos viejos y nuevos. </p> 
 
 {% include figure.html image="/cajamar_predictive/images/p1.png"%}
 
-<p align="justify">
-Podemos ver que los años de compra se distribuyen de manera muy parecida en los dos datasets. Es interesante observar que tenemos tanto entradas antiguas como entradas mas recientes, aunque predominan las mas nuevas. Si tenemos en cuenta la evolución de Cajamar, tiene sentido que en los años recientes haya un mayor número de entradas, ya que coincide con la expansión y fusión de la entidad. </p> 
-
-<p align="justify">
-También es útil saber si los productos se venden aproximadamente en los mismos periodos de tiempo entre el dataset train y test, ya que nos puede servir para establecer etiquetas de productos viejos y nuevos. 
-Primero de todo se calcula los años que hay entre la primera compra y la última de cada producto, para establecer su rango de compra en cada dataset. Posteriormente se comparan los dos datasets para saber si los productos de los dos datasets se ofrecen en el mismo periodo. </p>
+<p align="justify">Primero de todo se calcula los años que hay entre la primera compra y la última de cada producto, para establecer su rango de compra en cada dataset. Posteriormente se comparan los dos datasets para saber si los productos de los dos datasets se ofrecen en el mismo periodo. </p>
 
 {% include figure.html image="/cajamar_predictive/images/p2.png"%}
 
@@ -154,7 +163,12 @@ Además, esta matriz nos puede dar una idea de relaciones entre productos, y tam
 </p>
 
 
-*CONCLUSIONES FINALES*
+## Conclusiones 
+
+<p align="justify">Después de este primera exploración de los datos, podemos concluir que los datasets de train y test estan hechos de manera muy similar, sobretodo en la distribución temporal. Hay diferencies por lo que respecta a customers en género y segmento. </p>
+<p align="justify">En este reto parece clave la información que se puede obtener a partir de la fecha de compra, así que puede ser útil para el modelo predictivo añadir más variables con información temporal. </p>
+<p align="justify">El orden de compra es importante, ya que hay productes que se compran o tienden a comprarse juntos. Por lo tanto, también puede ser de utilidad añadir variables de compras previas. </p>
+<p align="justify">Destacar que hay productos como el 301, el 601, el 2302, el 9991 y el 9993 que aparecen recurrentemente en la mayoría de análisis, puesto que deben ser productos muy comunes para la mayoría de customers.</p> 
 
 
 
