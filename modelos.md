@@ -44,7 +44,7 @@ En este apartado se presenta la selección de models aplicados y su optimizació
 
 <p align="justify">En el siguiente gráfico se muestra la variación de la AUC en función del número de árboles y de la máxima profunidad seleccionados para distintos DRF aplicados. Cabe decir que todos los modelos son validados en el mismo dataset (test.set).</p>  
 
-{% include figure.html image="/images/unnamed-chunk-2-1.png"%}
+{% include figure.html image="/cajamar_predictive/images/unnamed-chunk-2-1.png"%}
 
 
 ## Validación
