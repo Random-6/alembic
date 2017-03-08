@@ -32,9 +32,9 @@ Primero de todo, tal y como se vio en el análisis exploratorio de los datos, ha
 A parte de las variables temporales, también se puede introducir información de los productos comprados anteriormente, ya que se ha visto que hay productos que se tienden a comprar juntos o de manera consecutiva, así que tener en cuenta los productos comprados previamente es también importante. 
 
 
-## Otras variables
+### Otras variables
 
-### 1. Clustering productos
+#### 1. Cluster de productos
 
 Una primera aproximación es hacer un clustering para ver si se agrupan los productos y podemos hacer una variable <b>cluster por producto</b>. Para hacer el clustering se utiliza el paqueta h2o, ya que tiene funciones optimizadas para trabajar con algoritmos de machine learning. 
 
@@ -43,7 +43,7 @@ Una primera aproximación es hacer un clustering para ver si se agrupan los prod
 Como se puede observar, el clustering de productos según el número de productos por mes de compra no genera resultados muy aprovechables, ya que separa los productos en un cluster muy grande y otros de pequeños. Esta información no nos es muy útiles para complementar el modelo. 
 
 
-### 2. Cluster de customers
+#### 2. Cluster de customers
 
 Vamos a hacer otra aproximación de clustering, esta vez de los usuarios dadas sus características sociodemográficas y la información de compra. Las variables que se añaden en el clustering son: 
 
@@ -59,7 +59,7 @@ De esta manera se han caracterizado los customers segun sus características dem
 
 En este caso, el clustering ha dado unos grupos con porcentages de customers razonables. Para intentar caracterizar los distintos clusters, se ha utilizado l'herramienta de *Power BI*.
 
-## GRID de productos
+### GRID de productos
 
 El historial de compras también se tiene que tener en cuenta, ya que esto tiene un efecto en la próxima compra. Por lo tanto, se ha hecho un grid para indicar, para cada compra, que productos ya se han adquirido anteriormente. Así pues, se añaden 94 variables (tantas como productos únicos), que indican con un valor de 1 si se ha comprado anteriormente cada producto. 
 
