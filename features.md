@@ -8,7 +8,7 @@ image: "/cajamar_predictive/images/fondo.png"
 
 En este apartado se explican qué variables se introducen en los modelos predictivos. 
 
-## Son todas las variables necesarias?
+##### Son todas las variables necesarias?
 
 Recordemos que variables tienen estos datasets:
 
@@ -34,7 +34,7 @@ A parte de las variables temporales, también se puede introducir información d
 
 ### Otras variables
 
-#### 1. Cluster de productos
+#### Cluster de productos
 
 Una primera aproximación es hacer un clustering para ver si se agrupan los productos y podemos hacer una variable <b>cluster por producto</b>. Para hacer el clustering se utiliza el paqueta h2o, ya que tiene funciones optimizadas para trabajar con algoritmos de machine learning. 
 
@@ -43,7 +43,7 @@ Una primera aproximación es hacer un clustering para ver si se agrupan los prod
 Como se puede observar, el clustering de productos según el número de productos por mes de compra no genera resultados muy aprovechables, ya que separa los productos en un cluster muy grande y otros de pequeños. Esta información no nos es muy útiles para complementar el modelo. 
 
 
-#### 2. Cluster de customers
+#### Cluster de customers
 
 Vamos a hacer otra aproximación de clustering, esta vez de los usuarios dadas sus características sociodemográficas y la información de compra. Las variables que se añaden en el clustering son: 
 
