@@ -9,7 +9,7 @@ En este apartado se presenta la selección de models aplicados y su optimizació
 
 ## Concepto Básico
 
-<p align="justify">El objetivo principal de este proyecto es la recomendación del siguiente producto a comprar por un determinado Customer_ID. Como hemos visto en apartados anteriores, disponemos de variables tanto socio-demográficas como variables relacionadas con el historial de compra del usuario. En el caso particular, además, se ha añadido la variable resultant de los **cluster** sobre el Customer_ID creados en apartados anteriores. </p> 
+<p align="justify">El objetivo principal de este proyecto es la recomendación del siguiente producto a comprar por un determinado Customer_ID. Como hemos visto en apartados anteriores, disponemos de variables tanto socio-demográficas como variables relacionadas con el historial de compra del usuario. En el caso particular, además, se ha añadido la variable resultant de los <i>cluster</i> sobre el Customer_ID creados en apartados anteriores. </p> 
 
 <p align="justify">La matriz final es, por tanto, una matrix de 117 variables con una fila por cada customer ID. Estas 117 variables son las que usaremos como predictores para nuestro modelo. Entre dichos predictores disponemos de:</p>  
 
@@ -18,7 +18,7 @@ En este apartado se presenta la selección de models aplicados y su optimizació
     + cluster_id (1 variable)
 * Variables relacionadas con el historial de compra
     + Relacionadas con la periodicidad (4 variables) 
-    + Relacionadas con el **mes de mayor compra** (12, una por cada mes del año) 
+    + Relacionadas con el <i>mes de mayor compra</i> (12, una por cada mes del año) 
 * ID del último producto comprado (1 variable) 
 * ID del posible producto a recomendar (1 variable). 
 
