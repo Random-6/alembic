@@ -35,9 +35,9 @@ paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
   username: alexx_abos # jekyll-seo-tag > Owners twitter username
-author: Alex Abos # jekyll-seo-tag > default author
+author: Alex Abos and Xisca Pericas # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
-  name: Alex Abos # jekyll-seo-tag > real name
+  name: Alex Abos and Xisca Pericas# jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
     - https://twitter.com/alexx_abos
     - https://www.linkedin.com/in/alexandra-ab%C3%B3s-ortega-3167a994/
@@ -52,14 +52,14 @@ excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: Europe/London # Timezone for blog posts and alike
 
 # 5. Collections
-collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    description: "My thoughts and ideas" # The post list page content
-    feature_text: |
-      Welcome to the blog
-    feature_image: "https://unsplash.it/1300/400?image=1067"
+#collections:
+#  posts:
+#    title: Posts # Needed for Siteleaf
+#    output: true
+#    description: "My thoughts and ideas" # The post list page content
+#    feature_text: |
+#      Welcome to the blog
+#    feature_image: "https://unsplash.it/1300/400?image=1067"
 
 # 6. Jekyll collections settings
 defaults:
@@ -70,12 +70,12 @@ defaults:
     values:
       layout: page # Default layout
       #image: "/assets/placeholder-social.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
+  #-
+  #  scope:
+  #    path: ""
+  #    type: posts
+  #  values:
+  #    layout: post # Default layout
       #image: "/assets/placeholder-social.png" # Default image for sharing
 
 # 7. Site settings
@@ -97,7 +97,7 @@ navigation_header:
   Features: /cajamar_predictive/features/
   Modelos: /cajamar_predictive/modelos/
   Resultados: /cajamar_predictive/resultados/
-  Blog: /cajamar_predictive/blog/
+  #Blog: /cajamar_predictive/blog/
   Fork: https://github.com/Random-6/CajamarPredictive
 
 
