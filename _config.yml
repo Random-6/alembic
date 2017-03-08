@@ -87,13 +87,13 @@ url: "https://random-6.github.io/cajamar_predictive/" # Site url, also used in j
 repo: "https://github.com/Random-6/CajamarPredictive"
 email: “alexandraabos@gmail.com”
 disqus: "alembic-1"
-avatarurl: "http://1.gravatar.com/avatar/d491dca318828394f33ade2a1e32950a" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+#avatarurl: "http://1.gravatar.com/avatar/d491dca318828394f33ade2a1e32950a" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 port: 3000
 
  # 8. Site navigation
 navigation_header:
   Home: /cajamar_predictive/
-  Introduccion: /cajamar_predictive/introduccion/
+  Introducción: /cajamar_predictive/introduccion/
   Features: /cajamar_predictive/features/
   Modelos: /cajamar_predictive/modelos/
   Resultados: /cajamar_predictive/resultados/
