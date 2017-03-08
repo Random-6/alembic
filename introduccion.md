@@ -56,7 +56,7 @@ Para evaluar las variables sociodemográficas de manera dinámica se ha preparad
 <p align="justify">Ahora nos fijamos en las variables sociodemográficas.</p>
 <p align="justify">Comparando las variables del train y del test podemos comprovar que, igual que pasaba en la información temporal, también se han mantenido las proporciones en las variables sociodemográficas.</p>  
 <p align="justify">- El rango de edad predominante en los dos datasets es el 4º, de  >= 45 años y Edad < 65 años, seguido del 3º, >= 30 años y Edad < 45 años.</p> 
-p align="justify">- Los rango de antigüedad mayores en los dos datasets son el 4º y el 5º, de 10-20 años y >= 20 años.</p> 
+<p align="justify">- Los rango de antigüedad mayores en los dos datasets son el 4º y el 5º, de 10-20 años y >= 20 años.</p> 
 <p align="justify">- En los ingresos encontramos diferencias en los datasets. En el train predominan los customers con 2º, de >= 6.000-12.000€, y seguidos muy de cerca por los del 3º 12.000-24.000€. En cambio, en el test primero hay del 3ª y luego del 5º, de >= 32.000 €. Así pues, en el dataset de test parece que hay customers con ingresos más altos.</p> 
 <p align="justify">- En el género también hay diferencias, ya que en el dataset de train hay más hombres y en el dataset de test más mujeres, concretamente 44.3M-55.7H, en el train, y 61.12M-38.88H en el test.</p> 
 <p align="justify">- Finalmente, respecto al segmento de los customers, ambos datasets tienen mayoritariamente a particulares.</p> 
