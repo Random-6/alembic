@@ -25,6 +25,7 @@ El dataset train original tiene una dimensión de 3350601 entradas por 8 variabl
 
 
 ## Variables
+
 El significado de las variables es el siguiente:
 
 * ID_Customer = Identificador de cliente
@@ -56,6 +57,7 @@ El significado de las variables es el siguiente:
 Así pues, tenemos el identificador del usuario, el codigo del producto comprado, la fecha de la compra y características demográficas del usuario.</p>
 
 ### Visualización variables sociodemográficas
+
 <p align="justify">
 Para evaluar las variables sociodemográficas de manera dinámica se ha preparado un Desktop con Power BI de Microsoft. De esta manera se pueden visualizar diferentes gráficos dinámicos de estas variables.</p> 
 
@@ -81,6 +83,7 @@ Para evaluar las variables sociodemográficas de manera dinámica se ha preparad
 
 
 ### Obtener información con la fecha de compra
+
 <p align="justify">Una vez comprovado que el dataset de train y el de test tiene una distribución de año de compras similar, es útil saber si los productos se venden aproximadamente en los mismos periodos de tiempo entre el dataset train y test, ya que nos puede servir para establecer etiquetas de productos viejos y nuevos. </p> 
 
 <p align="justify">Primero de todo se calcula los años que hay entre la primera compra y la última de cada producto, para establecer su rango de compra en cada dataset. Posteriormente se comparan los dos datasets para saber si los productos de los dos datasets se ofrecen en el mismo periodo. </p>
