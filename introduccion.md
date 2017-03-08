@@ -144,12 +144,12 @@ El conjunto predomina más es el de 201-601, seguido de 601-2302, 301-601 y 201-
 <p align="justify">
 Por otra parte, es de esperar que haya customers que tiendan a comprar más en unos meses que en otros, así que también es interesante mirar si hay este efecto. </p>
 
-{% include figure.html image="/cajamar_predictive/images/p8.png" position="left" %}
+{% include figure.html image="/cajamar_predictive/images/p11.png" position="left" %}
 
 <p align="justify">
 Por otro lado, fijandonos en el tiempo de compras, podemos generar los siguientes gráficos:</p> 
 
-{% include figure.html image="/cajamar_predictive/images/p9.png" position="left" %}
+{% include figure.html image="/cajamar_predictive/images/p12.png" position="left" %}
 
 <p align="justify">
 La mayoria de customers tienen aproximadamente un tiempo medio desde la primera compra de 5000 dias (14 años), un tiempo medio desde la última compra de 2222 (7 años) y un lag entre compras de 1200 (3 años). 
