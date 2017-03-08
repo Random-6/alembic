@@ -19,24 +19,37 @@ Cajamar es una entidad financiera resultante de la fusión de diversas cajas rur
 Las actividades de Cajamar Caja Rural atienden las necesidades y demandas de financiación, ahorro e inversión de sus socios y clientes. Realiza toda clase de operaciones activas, pasivas y de servicios, entre ellas las de banca al por menor en su red de sucursales, banca corporativa, financiación hipotecaria, banca telefónica y banca electrónica, operaciones financieras con no residentes, gestión de fondos y patrimonios, arrendamiento financiero, seguros y otros productos secundarios para captación de recursos o financiación a clientes.</p>
 
 ## Primeros pasos
-<p align="justify">
-Primero se evaluan las dimensiones de los datasets y se hacen comprovaciones senzillas:</p>
 
 <p align="justify">
-El dataset train original tiene una dimensión de 3350601 entradas por 8 variables y el dataset test, 1147687 entradas y 8 variables. Antes de empezar se tienen que comprobar si hay entradas duplicadas y/o missing values. En este caso no hay duplicados ni missing values.</p>
+El dataset train original tiene una dimensión de 3350601 entradas por 8 variables y el dataset test, 1147687 entradas y 8 variables. Antes de empezar se tienen que comprobar si hay entradas duplicadas y/o missing values, pero en este caso no hay.</p>
 
 
 ## Variables
 El significado de las variables es el siguiente:
 
-- ID_Customer = Identificador de cliente
-- Cod_Prod = Código de la modalidad de producto contratado
-- Cod_Fecha = Fecha de contratación de la modalidad de producto
-- Socio_Demo_01 = Edad
-- Socio_Demo_02 = Antigüedad
-- Socio_Demo_03 = Ingresos
-- Socio_Demo_04 = Sexo (1: Hombre, 2: Mujer)
-- Socio_Demo_05 = Segmento (00: Particular | 01:Agricultor | 02:Comercio | 03:Autónomo)
+* ID_Customer = Identificador de cliente
+* Cod_Prod = Código de la modalidad de producto contratado
+* Cod_Fecha = Fecha de contratación de la modalidad de producto
+* Socio_Demo_01 = Edad
+  + 1: < 18 años
+  + 2: 18-30 años
+  + 3: 30-45 años
+  + 4: 45-65 años
+  + 5: >= 65 años
+* Socio_Demo_02 = Antigüedad
+  + 1: < 1 año
+  + 2: 1-5 años
+  + 3: 5-10 años
+  + 4: 10-20 años
+  + 5: >= 20 años
+* Socio_Demo_03 = Ingresos
+  + 1: < 6.000 €
+  + 2: 6.000-12.000 €
+  + 3: 12.000-24.000 €
+  + 4: 24.000-32.000 €
+  + 5: >= 32.000 €
+* Socio_Demo_04 = Sexo (1: Hombre, 2: Mujer)
+* Socio_Demo_05 = Segmento (00: Particular | 01:Agricultor | 02:Comercio | 03:Autónomo)
 
 
 <p align="justify">
@@ -72,8 +85,6 @@ Para evaluar las variables sociodemográficas de manera dinámica se ha preparad
 <p align="justify">
 Una vez comprovado que el dataset de train y el de test tiene una distribución de año de compras similar, es útil saber si los productos se venden aproximadamente en los mismos periodos de tiempo entre el dataset train y test, ya que nos puede servir para establecer etiquetas de productos viejos y nuevos. </p> 
 
-{% include figure.html image="/cajamar_predictive/images/p1.png"%}
-
 <p align="justify">Primero de todo se calcula los años que hay entre la primera compra y la última de cada producto, para establecer su rango de compra en cada dataset. Posteriormente se comparan los dos datasets para saber si los productos de los dos datasets se ofrecen en el mismo periodo. </p>
 
 {% include figure.html image="/cajamar_predictive/images/p2.png"%}
@@ -97,7 +108,6 @@ Se puede observar que sí que hay productos que se venden en épocas determinada
 Otra idea interesante a explorar es identificar si hay algunos productos que se vendan juntos. Hemos podido detectar que hay dos productos, el 9993 y el 9991, que tienen cada año el mismo número de compras. Así pues, es indicado suponer que se deben vender juntos o de manera consecutiva. Así pues, si en el test hay usuarios que han comprado uno de los dos productos y no tienen el otro, se les puede recomendar. </p> 
 
 {% include figure.html image="/cajamar_predictive/images/p4a.png"%}
-
 
 
 ### Variables relacionadas con el customer 
