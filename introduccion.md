@@ -49,7 +49,7 @@ El significado de las variables es el siguiente:
   + 4: 24.000-32.000 €
   + 5: >= 32.000 €
 * Socio_Demo_04 = Sexo (1: Hombre, 2: Mujer)
-* Socio_Demo_05 = Segmento (00: Particular | 01:Agricultor | 02:Comercio | 03:Autónomo)
+* Socio_Demo_05 = Segmento (00: Particular, 01:Agricultor, 02:Comercio, 03:Autónomo)
 
 
 <p align="justify">
