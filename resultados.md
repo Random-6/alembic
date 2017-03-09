@@ -9,7 +9,7 @@ image: "/cajamar_predictive/images/fondo.png"
 En este apartado se presenta los resultados obtenidos. 
 
 
-## Validación de los modelos por cada cluster 
+### Validación de los modelos por cada cluster 
 
 Continuando con lo explicado en el apartado anterior de "Seleccion de Modelos", se ha aplicado un DRF con una optimización usando un Grid Random Search para cada train and test set agrupado por los distintos clusters. A continuación se muestran los resultados de la validación con la curva ROC i la Curva de Precision-Recall (explicadas brevemente anteriormente). 
 

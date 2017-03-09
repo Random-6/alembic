@@ -22,7 +22,7 @@ Las actividades de Cajamar Caja Rural atienden las necesidades y demandas de fin
 <p align="justify">El dataset <i>train</i> original tiene una dimensión de 3.350.601 entradas por 8 variables y el dataset <i>test</i>, 1.147.687 entradas y 8 variables.</p>
 
 
-## Variables
+### Variables
 
 <p align="justify">Las variables sociodemográficas disponibles son las siguientes:
 Identificador de cliente (ID_Customer), código de la modalidad de producto contratado (Cod_Prod), fecha de contratación (Cod_Fecha), edad (Socio_Demo_01), Antigüedad (Socio_Demo_02), ingresos (Socio_Demo_03), sexo (Socio_Demo_04) y segmento (Socio_Demo_05). </p>
@@ -30,7 +30,7 @@ Identificador de cliente (ID_Customer), código de la modalidad de producto cont
 Para más información de las variables, consultar la web de [University Hack 2017](http://www.cajamardatalab.com/datathon-cajamar-universityhack-2017/) 
 
 
-### Análisis exploratorio de las variables sociodemográficas
+#### Análisis exploratorio de las variables sociodemográficas
 
 <p align="justify">
 Para evaluar las variables de manera dinámica se ha preparado un Desktop con Power BI de Microsoft.</p> 
