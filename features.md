@@ -6,77 +6,133 @@ feature_image: "/cajamar_predictive/images/fondo.png"
 image: "/cajamar_predictive/images/fondo.png"
 ---
 
-<p align="justify">En este apartado se explican qué variables se introducen en los modelos predictivos.</p> 
+<p align="justify">En este apartado se explican qué variables se introducen en los modelos predictivos y como se han deducido.</p>
+
 
 ### Son todas las variables necesarias?
 
-Recordemos que variables tienen estos datasets:
+<p align="justify">Para el modelo que se propone se ha decidido no usar la variable género, ya que por razones éticas no se considera adequada la recomendación de productos basada en diferencias en esta característica.</p> 
 
-* ID_Customer = Identificador de cliente
-* Cod_Prod = Código de la modalidad de producto contratado
-* Cod_Fecha = Fecha de contratación de la modalidad de producto
-* Socio_Demo_01 = Edad
-* Socio_Demo_02 = Antigüedad
-* Socio_Demo_03 = Ingresos
-* Socio_Demo_04 = Sexo (1: Hombre, 2: Mujer)
-* Socio_Demo_05 = Segmento (00: Particular, 01:Agricultor, 02:Comercio, 03:Autónomo)
+## Análisis de nuevas variables
 
-<p align="justify">Es importante tener en cuenta para quien se esta haciendo este modelo predictivo. En este caso, el banco Cajamar tiene que decidir la interpretabilidad y viabilidad del modelo. Así pues, una variable que hemos decidido <b>no utilizar para esta predicción es el género del cliente</b>, ya que no es adecuado que el banco utilize un modelo que introduzca diferencias de compra en función del género del cliente.</p> 
+### Obtener información con la fecha de compra
+
+#### Se pueden eliminar productos antiguos?
+
+<p align="justify">Una primera hipótesis fue utilizar solo información de compras más recientes. Se comprobó por tanto, los rangos de fecha de los distintos productos en ambos datasets. El gráfico de continuación presenta la diferencia entre el año inicial de los productos entre ambos datasets, dandonos visión de dicha diferencia.</p> 
+
+{% include figure.html image="/cajamar_predictive/images/p2.png" position="left" %}
+
+<p align="justify">Se pudo observar que los productos no aparecen en los dos datasets exactamente en el mismo rango de años. Hay un producto en concreto, el 1002, que aparece en el test 29 años antes que en el train, y dos mas, el 704 y el 2503, que aprecen 12 y 11 años antes en el train que en el test, respectivamente. Por eso se decidio no filtrar muestras basandonos en esta propiedad.</p>
+
+#### Hay productos que se venden más en determinadas epocas del año?
+
+<p align="justify">Una posible característica a añadir es el mes de compra del producto. Por tanto, se estudió la distribución a lo largo de los meses para todos los productos. El siguiente gráfico presenta el caso particular del producto 9993, el cual presenta un pico en marzo y abril. En consecuencia se podría deducir que es un producto estacional y que dicha característica debería introducirse en el dataset.</p>
+
+{% include figure.html image="/cajamar_predictive/images/p3.png" position="left" %}
+
+
+#### Hay productos que se vendan juntos?
+
+<p align="justify">
+Otra idea interesante a explorar la correlación entre productos. Aplicando técnicas senzillas de correlación se ha podido detectar que efectivamente hay productos que se venden juntos. Como por ejemplo los codigos 9993 y el 9991 que tienen cada año el mismo número de compras (ver imagen siguiente). Sería acertado, por tanto, recomendar a los clientes que tengan un producto que compren su pareja.</p> 
+
+{% include figure.html image="/cajamar_predictive/images/p4a.png" position="left" %}
+
+#### Y de los productos que se compran juntos, que parejas predominan?*
+
+<p align="justify">
+Como se ha comentado anteriormente, el dataset presenta parejas de productos. Si se observa la distribución de compra por las distintas parejas y trios, se pueden observar distintos conjuntos altamente demandados como el de 201-601, seguido de 601-2302, 301-601 y 201-601-2302. Tal como se ha visto anteriormente, los productos 601, 201, 301 deben pertenecer a productos primarios. Por tanto no es de estrañar encontrarlos en las secuencias.  </p>
+
+{% include figure.html image="/cajamar_predictive/images/p7.png" position="left" %}
+
+
+----
+
+### Relación entre último y penúltimo producto
+
+<p align="justify">
+Otra idea interesante es mirar la relación entre un producto y el anterior comprado. Para mirar esta idea se cogen los últimos y penúltimos productos de cada customer y se crea el siguiente gráfico. Dicho gráfico es un heatmap, en el cual cada recuadro representa el log(N), siendo N el número de veces que 2 productos se compran seguidos. 
+</p>
+{% include figure.html image="/cajamar_predictive/images/p10.png" position="left" %}
+
+
+<p align="justify">
+Hay algunos productos que se compran bastante seguidos, como por ejemplo el *9991* y el *9993*, como ya hemos comentado anteriormente, el *601* y el *301*, y también el *601* y el *2302*, entre otros. Además, esta matriz nos puede dar una idea de relaciones entre productos, y también nos plantea la posiblidad de hacer cluster de productos para detectar este tipo de relaciones. 
+</p>
+
+
+
+----
+
+### Variables relacionadas con el customer 
+
+<p align="justify">
+A continuación se pretende caracterizar a los distintos customers según sus características de compra, como por ejemplo, si es un customer que compra mucho, cuando es su primera compra, y la última, cada cuanto realiza una compra, etc.</p>
+
+#### Cuantos productos han comprado los customers?
+
+<p align="justify">
+Podemos ver que la gran mayoria de customers compran entre 1-4 productos. </p>
+
+{% include figure.html image="/cajamar_predictive/images/p4.png" position="left" %}
+
+
+#### Y de los que solo han comprado un producto, que productos predominan?
+
+<p align="justify">
+Se puede ver pues que el *601* destaca en esos usuarios que solo han comprado uno, seguido del *301*, el *201* y el *2302*. Se puede deducir que estos productos deben ser básicos para todo usuario bancario. </p>
+
+{% include figure.html image="/cajamar_predictive/images/p5.png" position="left" %}
+
+<p align="justify">
+Tambien se pueden evaluar los productos comprados por customers con mayor historial de compra (> 10 productos).</p>
+<p align="justify">
+El producto *601* sigue teniendo mucha demanda, pero a él se unen también otros productos como el *201* y el *301*, el *2302* y la pareja formada por el *9991* y *9993*.</p> 
+
+{% include figure.html image="/cajamar_predictive/images/p6.png" position="left" %}
+
+
+#### Es importante el mes de compra?
+
+<p align="justify">
+Entendiendo el negocio se puede deducir que los customers tendrán tendencia a comprar en determinados periodos del año. Así pues es interesante mirar si hay este efecto. En la imágen siguiente se puede observar las compras de estos customers se centran en meses determinados. </p>
+
+{% include figure.html image="/cajamar_predictive/images/p11.png" position="left" %}
+
+<p align="justify">
+Otra variable a deducir es el tiempo de compras, que se puede visualizar en los siguientes gráficos:</p> 
+
+{% include figure.html image="/cajamar_predictive/images/p12.png" position="left" %}
+
+<p align="justify">
+La mayoria de customers tienen aproximadamente un tiempo medio desde la primera compra de 5000 dias (14 años), un tiempo medio desde la última compra de 2222 (7 años) y un lag entre compras de 1200 (3 años). 
+</p>
+
 
 ## Enriquecer la base
 
-<p align="justify">A partir de las variables dadas también se pueden crear de otras para enriquecer la base.</p> 
+<p align="justify">Usando la información anterior se han creado variables nuevas para ayudar al modelo.</p> 
 
-<p align="justify">Primero de todo, tal y como se vio en el análisis exploratorio de los datos, hay mucha información temporal que nos puede ser útil. Así pues, podemos utilizar las variables creadas en el apartado anterior, como <b>mes</b> y <b>año</b>, <b>tiempo desde primera compra</b>,<b>tiempo desde última compra</b> y <b>tiempo medio entre compras</b>. Otro concepto interesante es saber cuantos productos ha comprado cada customer por mes, ya que así se intenta modelizar el hecho que hay productos que se compran mas en épocas determinadas y usuarios que tienden a compran más en determinados meses.</p> 
-
-<p align="justify">A parte de las variables temporales, también se puede introducir información de los productos comprados anteriormente, ya que se ha visto que hay productos que se tienden a comprar juntos o de manera consecutiva, así que tener en cuenta los productos comprados previamente es también importante.</p> 
+<p align="justify">Primero de todo, tal y como se vio en el análisis exploratorio de los datos, hay mucha información temporal que puede ser útil.</p> 
+<p align="justify">Otro punto es introducir el histórico de productos.Así pues, se añaden 94 variables (tantas como productos únicos), que indican si un producto se ha comprado anteriormente.</p> 
 
 
 #### Cluster de productos
 
-<p align="justify">Una primera aproximación es hacer un clustering para ver si se agrupan los productos y podemos hacer una variable <b>cluster por producto</b>. Para hacer el clustering se utiliza el paqueta h2o, ya que tiene funciones optimizadas para trabajar con algoritmos de machine learning.</p> 
-
-*IMATGE REPARTICIO CLUSTER DOLENT*
-
-<p align="justify">Como se puede observar, el clustering de productos según el número de productos por mes de compra no genera resultados muy aprovechables, ya que separa los productos en un cluster muy grande y otros de pequeños. Esta información no nos es muy útiles para complementar el modelo.</p> 
+<p align="justify">Una primera aproximación fue hacer un clustering para ver si se agrupan los productos y se puede añadir una variable <b>cluster por producto</b>. Para hacer el clustering se utiliza la plataforma h2o, ya que tiene funciones optimizadas para trabajar con algoritmos de machine learning.</p> 
+<p align="justify">Sin embargo, se descarto esta idea porque los grupos obtenidos se repartían de manera muy inhomogénea.</p> 
 
 
 #### Cluster de customers
 
-<p align="justify">Vamos a hacer otra aproximación de clustering, esta vez de los usuarios dadas sus características sociodemográficas y la información de compra. Las variables que se añaden en el clustering son:</p> 
+<p align="justify">Por otro lado, se presenta otra aproximación de clustering, esta vez de los usuarios dadas sus características sociodemográficas y la información de compra. </p> 
 
-* Socio_Demo01-05, todas excepto el género. 
-* Variables de tiempo de compra.
-* Total productos comprados
+<p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables. Para caracterizar los distintos clusters, se ha utilizado l'herramienta de <b>Power BI</b>.</p>
 
-<p align="justify">De esta manera se han caracterizado los customers segun sus características demograficas y sus características de compras.</p> 
-
-*AFEGIR LINK!*
-
-*AFEGIR COMENTARIS*
-
-<p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers razonables. Para intentar caracterizar los distintos clusters, se ha utilizado l'herramienta de *Power BI*.</p>
-
-### GRID de productos
-
-<p align="justify">El historial de compras también se tiene que tener en cuenta, ya que esto tiene un efecto en la próxima compra. Por lo tanto, se ha hecho un grid para indicar, para cada compra, que productos ya se han adquirido anteriormente. Así pues, se añaden 94 variables (tantas como productos únicos), que indican con un valor de 1 si se ha comprado anteriormente cada producto.</p> 
+[CajamarPowerBI](https://app.powerbi.com/view?r=eyJrIjoiN2I5MzM5MTUtZWZhMi00MmNlLWI0NmEtMjEwOTY1NWMzOTZjIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9)
 
 
-## Base con variables finales
-
-<p align="justify">Finalmente, se han añadido variables para enriquecer la base que se utiliza para los modelos. Las variables de la nueva base son: </p>
-
-* Socio_Demo01-05, todas excepto el género. 
-* Total productos
-* Variables de tiempo de compra
-  + Mes
-  + Año
-  + Tiempo desde la 1a compra
-  + Tiempo desde última compra
-  + Lag entre compras
-  + Compras por mes
-* Total productos comprados
-* 94 columnas, una por producto, indicando si se ha adquirido previamente.
-
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2I5MzM5MTUtZWZhMi00MmNlLWI0NmEtMjEwOTY1NWMzOTZjIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 

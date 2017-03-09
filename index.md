@@ -9,7 +9,7 @@ image: "/cajamar_predictive/images/fondo.png"
 excerpt: "Presentación de los resultados obtenidos en el reto Microsoft Predictive Modelling de Cajamar"
 ---
 
-<p align="justify">Este blog presenta los pasos y ideas seguidas para completar el Reto Microsoft Predictive Modelling de Cajamar. La primera fase de esta dataton se ha celebrado entre el 20 de febrero y el 10 de marzo.</p>  
+<p align="justify">Esta página presenta los pasos e ideas seguidas para completar el Reto Microsoft Predictive Modelling de Cajamar. La primera fase de esta <i>dataton</i> se ha celebrado entre el 20 de febrero y el 10 de marzo.</p>  
 
 {% include button.html text="Fork on GitHub" icon="github" link="https://github.com/Random-6/CajamarPredictive" %} 
 
@@ -21,10 +21,10 @@ Para mas información sobre el reto consultar la web de [University Hack 2017](h
 
 ## Presentación 
 
-<p align="justify">El objectivo de la competición es desarollar un modelo predictivo para proporcionar el siguiente producto a contratar por los clientes de la entidad bancaria Cajamar.</p> 
+<p align="justify">El objectivo de la competición es desarollar un modelo predictivo para recomendar el siguiente producto a contratar por los clientes de la entidad bancaria Cajamar.</p> 
 
-<p align="justify">Se proporcionan dos datasets, train y test, que representan la compra de un producto (<b>Cod_Prod</b>) llevado a cabo por un customer (<b>ID_Customer</b>). En cada entrada se incluyen los datos demográficos del comprador y la fecha de compra. 
-La finalidad es predecir el siguiente producto que comprará cada cliente dada la última compra que se indica en el dataset de test.</p>    
+<p align="justify">Se proporcionan dos datasets, <i>train</i> y <i>test</i>, que representan la compra de un producto (<b>Cod_Prod</b>) llevado a cabo por un customer (<b>ID_Customer</b>). En cada entrada se incluyen los datos sociodemográficos del comprador y la fecha de compra.</p> 
+
 
 Los resultados se presentan en el esquema siguiente:
 
