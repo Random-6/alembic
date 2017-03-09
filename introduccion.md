@@ -19,8 +19,7 @@ Las actividades de Cajamar Caja Rural atienden las necesidades y demandas de fin
 
 ## Primeros pasos
 
-<p align="justify">
-El dataset <i>train</i> original tiene una dimensión de 3.350.601 entradas por 8 variables y el dataset <i>test<i>, 1.147.687 entradas y 8 variables.</p>
+<p align="justify">El dataset <i>train</i> original tiene una dimensión de 3.350.601 entradas por 8 variables y el dataset <i>test</i>, 1.147.687 entradas y 8 variables.</p>
 
 
 ## Variables
@@ -51,10 +50,9 @@ Para evaluar las variables de manera dinámica se ha preparado un Desktop con Po
 
 ## Conclusiones 
 
-<p align="justify">Después de este primera exploración de los datos, podemos concluir que los datasets de train y test estan hechos de manera muy similar, sobretodo en la distribución temporal. Hay diferencies por lo que respecta a customers en género y segmento. </p>
+<p align="justify">Después de esta primera exploración de los datos, podemos concluir que los datasets de train y test estan hechos de manera muy similar, sobretodo en la distribución temporal. Hay diferencies por lo que respecta a customers en género y segmento. </p>
 <p align="justify">En este reto parece clave la información que se puede obtener a partir de la fecha de compra, así que puede ser útil para el modelo predictivo añadir más variables con información temporal. </p>
-<p align="justify">El orden de compra es importante, ya que hay productes que se compran o tienden a comprarse juntos. Por lo tanto, también puede ser de utilidad añadir variables de compras previas. </p>
-El orden de compra es importante, ya que hay productes que se compran o tienden a comprarse Esta información primaria se usará para la creación de nuevas variables y de modelos. </p>
+<p align="justify">El orden de compra es importante, ya que hay productes que se compran o tienden a comprarse juntos. Por lo tanto, también puede ser de utilidad añadir variables de compras previas. El orden de compra es importante, ya que hay productes que se compran o tienden a comprarse Esta información primaria se usará para la creación de nuevas variables y de modelos. </p>
 
 
 
