@@ -126,7 +126,8 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 
 <p align="justify">Por otro lado, se presenta otra aproximación de clustering, esta vez de los usuarios dadas sus características sociodemográficas y la información de compra. </p> 
 
-<p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables. </p>
+<p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables, como se puede apreciar en la siguiente figura. </p>
+{% include figure.html image="/cajamar_predictive/images/fig20.png" position="left" %}
 
 
 ## Conclusiones
