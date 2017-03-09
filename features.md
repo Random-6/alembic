@@ -97,12 +97,11 @@ El producto <b>601</b> sigue teniendo mucha demanda, pero a él se unen también
 <p align="justify">
 Entendiendo el negocio se puede deducir que los customers tendrán tendencia a comprar en determinados periodos del año. Así pues es interesante mirar si hay este efecto. En la imágen siguiente se puede observar las compras de estos customers se centran en meses determinados. </p>
 
-{% include figure.html image="/cajamar_predictive/images/p11.png" position="left" %}
+{% include figure.html image="/cajamar_predictive/images/fig11.png" position="left" %}
 
-<p align="justify">
-Otra variable a deducir es el tiempo de compras, que se puede visualizar en los siguientes gráficos:</p> 
+<p align="justify">Otra variable a deducir es el tiempo de compras, que se puede visualizar en los siguientes gráficos:</p> 
 
-{% include figure.html image="/cajamar_predictive/images/p12.png" position="left" %}
+{% include figure.html image="/cajamar_predictive/images/fig12.png" position="left" %}
 
 <p align="justify">
 La mayoria de customers tienen aproximadamente un tiempo medio desde la primera compra de 5000 dias (14 años), un tiempo medio desde la última compra de 2222 (7 años) y un lag entre compras de 1200 (3 años). 

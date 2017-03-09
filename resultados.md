@@ -42,7 +42,7 @@ El siguiente gráfico es igual al anterior pero permite ver la proporción de cu
 <img src="/cajamar_predictive/images/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
 
 
-Finalmente, y como curiosidad, si calculamos el Model Score solo en los customers que anteriormente habian comprado el producto 9991, tenemos un model score de 0.999 (casi 1) y el producto a recomendar és el 9993!! 
+Finalmente, y como curiosidad, si calculamos el Model Score solo en los customers que anteriormente habian comprado el producto 9991, tenemos un model score de 0.999 (casi 1) y el producto a recomendar és el 9993! 
 
 
 
