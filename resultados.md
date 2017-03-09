@@ -8,7 +8,6 @@ image: "/cajamar_predictive/images/fondo.png"
 
 En este apartado se presenta los resultados obtenidos. 
 
------
 
 ## Validación de los modelos por cada cluster 
 

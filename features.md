@@ -128,6 +128,7 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 
 <p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables. </p>
 
+
 ## Conclusiones
 
 <p align="justify">Los análisis llevados a cabo en este apartado permiten definir las variables nuevas que se van a introducir en el modelo predictivo. Destacar la importancia de las variables temporales, así como la información del historial de compra. El hecho que los customers tengan características sociodemográficas y comportamientos de compra distintos permiten también agruparlos en clusters. </p>
