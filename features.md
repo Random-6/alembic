@@ -126,11 +126,11 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 
 <p align="justify">Por otro lado, se presenta otra aproximación de clustering, esta vez de los usuarios dadas sus características sociodemográficas y la información de compra. </p> 
 
-<p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables. Para caracterizar los distintos clusters, se ha utilizado l'herramienta de <b>Power BI</b>.</p>
+<p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables. 
 
-[CajamarPowerBI](https://app.powerbi.com/view?r=eyJrIjoiN2I5MzM5MTUtZWZhMi00MmNlLWI0NmEtMjEwOTY1NWMzOTZjIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9)
+## Conclusiones
 
+Los análisis llevados a cabo en este apartado permiten definir las variables nuevas que se van a introducir en el modelo predictivo. Destacar la importancia de las variables temporales, así como la información del historial de compra. El hecho que los customers tengan características sociodemográficas y comportamientos de compra distintos permiten también agruparlos en clusters. 
 
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2I5MzM5MTUtZWZhMi00MmNlLWI0NmEtMjEwOTY1NWMzOTZjIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 
