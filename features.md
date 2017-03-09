@@ -13,7 +13,6 @@ image: "/cajamar_predictive/images/fondo.png"
 
 <p align="justify">Para el modelo que se propone se ha decidido no usar la variable género, ya que por razones éticas no se considera adequada la recomendación de productos basada en diferencias en esta característica.</p> 
 
-## Análisis de nuevas variables
 
 ### Obtener información con la fecha de compra
 
@@ -39,7 +38,7 @@ Otra idea interesante a explorar la correlación entre productos. Aplicando téc
 
 {% include figure.html image="/cajamar_predictive/images/p4a.png" position="left" %}
 
-#### Y de los productos que se compran juntos, que parejas predominan?*
+#### Y de los productos que se compran juntos, que parejas predominan?
 
 <p align="justify">
 Como se ha comentado anteriormente, el dataset presenta parejas de productos. Si se observa la distribución de compra por las distintas parejas y trios, se pueden observar distintos conjuntos altamente demandados como el de 201-601, seguido de 601-2302, 301-601 y 201-601-2302. Tal como se ha visto anteriormente, los productos 601, 201, 301 deben pertenecer a productos primarios. Por tanto no es de estrañar encontrarlos en las secuencias.  </p>
@@ -58,7 +57,7 @@ Otra idea interesante es mirar la relación entre un producto y el anterior comp
 
 
 <p align="justify">
-Hay algunos productos que se compran bastante seguidos, como por ejemplo el *9991* y el *9993*, como ya hemos comentado anteriormente, el *601* y el *301*, y también el *601* y el *2302*, entre otros. Además, esta matriz nos puede dar una idea de relaciones entre productos, y también nos plantea la posiblidad de hacer cluster de productos para detectar este tipo de relaciones. 
+Hay algunos productos que se compran bastante seguidos, como por ejemplo el <b>9991</b> y el <b>9993</b>, como ya hemos comentado anteriormente, el <b>601</b> y el <b>301</b>, y también el <b>601</b> y el <b>2302</b>, entre otros. Además, esta matriz nos puede dar una idea de relaciones entre productos, y también nos plantea la posiblidad de hacer cluster de productos para detectar este tipo de relaciones. 
 </p>
 
 
@@ -81,14 +80,14 @@ Podemos ver que la gran mayoria de customers compran entre 1-4 productos. </p>
 #### Y de los que solo han comprado un producto, que productos predominan?
 
 <p align="justify">
-Se puede ver pues que el *601* destaca en esos usuarios que solo han comprado uno, seguido del *301*, el *201* y el *2302*. Se puede deducir que estos productos deben ser básicos para todo usuario bancario. </p>
+Se puede ver pues que el <b>601</b> destaca en esos usuarios que solo han comprado uno, seguido del <b>301</b>, el <b>201</b> y el <b>2302</b>. Se puede deducir que estos productos deben ser básicos para todo usuario bancario. </p>
 
 {% include figure.html image="/cajamar_predictive/images/p5.png" position="left" %}
 
 <p align="justify">
 Tambien se pueden evaluar los productos comprados por customers con mayor historial de compra (> 10 productos).</p>
 <p align="justify">
-El producto *601* sigue teniendo mucha demanda, pero a él se unen también otros productos como el *201* y el *301*, el *2302* y la pareja formada por el *9991* y *9993*.</p> 
+El producto <b>601</b> sigue teniendo mucha demanda, pero a él se unen también otros productos como el <b>201</b> y el <b>301</b>, el <b>2302</b> y la pareja formada por el <b>9991</b> y <b>9993</b>.</p> 
 
 {% include figure.html image="/cajamar_predictive/images/p6.png" position="left" %}
 
