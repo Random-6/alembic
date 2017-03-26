@@ -139,12 +139,12 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 
 <p align="justify">En los clusters se puede apreciar: </p>
 
-* Grupo de clientes mayores con ingresos medios (cluster 0) .
-* Grupo de clientes más jóvenes y de mediana edad con ingresos medios-bajos (cluster 1). 
-* Grupo de clientes de mediana edad con ingresos medios-altos (cluster 2). 
-* Grupo de clientes  de mediana-alta edad con ingresos altos (cluster 3).
-* El cluster 3 es el que tiene más clientes autónomos. 
-* Mayormente, los grupos de edad más alta tienen también más antigüedad.
+<p align="justify">* Grupo de clientes mayores con ingresos medios (cluster 0).</p>
+<p align="justify">* Grupo de clientes más jóvenes y de mediana edad con ingresos medios-bajos (cluster 1).</p> 
+<p align="justify">* Grupo de clientes de mediana edad con ingresos medios-altos (cluster 2).</p> 
+<p align="justify">* Grupo de clientes  de mediana-alta edad con ingresos altos (cluster 3).</p>
+<p align="justify">* El cluster 3 es el que tiene más clientes autónomos.</p> 
+<p align="justify">* Mayormente, los grupos de edad más alta tienen también más antigüedad.</p>
 
 ## Conclusiones
 
