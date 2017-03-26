@@ -47,14 +47,14 @@ Los siguientes gráficos muestran el histograma de score por customer. Recordemo
 
 ### Conclusiones
 
-<p align="justify">* Los resultados obtenidos son una lista de recomendaciones según la probabilidad de compra. Tratando con un problema de recomendación de productos, nos parece interesante presentar también los 3-4 productos con mayor probabilidad, ya que normalmente en este abordaje las empresas tienen en cuenta más de una opción de recomendación.</p>   
+<p align="justify">- Los resultados obtenidos son una lista de recomendaciones según la probabilidad de compra. Tratando con un problema de recomendación de productos, nos parece interesante presentar también los 3-4 productos con mayor probabilidad, ya que normalmente en este abordaje las empresas tienen en cuenta más de una opción de recomendación.</p>   
 
-<p align="justify">* Si recomendamos 3-4 productos, en más del 70% de los casos se ofrece el producto comprado a continuación por el cliente.</p> 
+<p align="justify">- Si recomendamos 3-4 productos, en más del 70% de los casos se ofrece el producto comprado a continuación por el cliente.</p> 
 
-<p align="justify">* En nuestra métrica de validación, no se considera solamente acertar o no el primer producto, sino que tiene en cuenta en qué posición de nuestra lista de recomendaciones está el producto que realmente comprará el cliente. Por lo tanto, nos permite valorar también si el producto real está entre las primeras recomendaciones, no solo la primera. Creemos que esta validación se ajusta más a la realidad del mercado estudiado.</p> 
+<p align="justify">- En nuestra métrica de validación, no se considera solamente acertar o no el primer producto, sino que tiene en cuenta en qué posición de nuestra lista de recomendaciones está el producto que realmente comprará el cliente. Por lo tanto, nos permite valorar también si el producto real está entre las primeras recomendaciones, no solo la primera. Creemos que esta validación se ajusta más a la realidad del mercado estudiado.</p> 
 
-<p align="justify">* Crear un modelo por cluster ha dado mejores resultados que hacer un modelo para todos los clientes. Por lo tanto, buscar características distintivas entre clientes parece ser un buen planteamiento.</p> 
+<p align="justify">- Crear un modelo por cluster ha dado mejores resultados que hacer un modelo para todos los clientes. Por lo tanto, buscar características distintivas entre clientes parece ser un buen planteamiento.</p> 
 
-<p align="justify">* La utilización de librerías y plataformas como h2o permite crear, optimizar y evaluar modelos de una manera rápida y sencilla. De esta manera se puede dedicar una parte importante del proceso en estudiar y transformar la base y las variables.</p>   
+<p align="justify">- La utilización de librerías y plataformas como h2o permite crear, optimizar y evaluar modelos de una manera rápida y sencilla. De esta manera se puede dedicar una parte importante del proceso en estudiar y transformar la base y las variables.</p>   
 
 
