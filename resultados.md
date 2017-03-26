@@ -26,7 +26,7 @@ image: "/cajamar_predictive/images/fondo.png"
 
 ### Validación del Model Score 
 
-<p align="justify">El Model Score nos da una idea de como de bien recomienda nuestro modelo. En el mejor de los casos el model score debiera ser de 1, siendo que hemos recomenando a cada customer el producto que realmente compró en el primer lugar del ranking.</p>  
+<p align="justify">El Model Score nos da una idea de como de bien recomienda nuestro modelo. En el mejor de los casos el model score debiera ser de 94, siendo que hemos recomenando a cada customer el producto que realmente compró en el primer lugar del ranking.</p>  
 <p align="justify">En nuestro caso se ha obtenido un Model Score de 0.95, bastante cercano a 1. 
 Los siguientes gráficos muestran el histograma de score por customer. Recordemos que para cada customer se calcula el score como la posición en el ranking del producto que realmente compró (siendo 1 el peor score y 94 el mejor). </p> 
 <p align="justify">El gráfico muestra claramente un pico en la posición 94, es decir, en el mejor resultado. Ese se corresponde con la cantidad de customers por los cuales se ha recomendado el producto correcto a la primera. Sin embargo también se puede observar una cola en los otros valores de score, confirmando que el modelo no tiene una performance perfecta. </p> 
@@ -43,6 +43,18 @@ Los siguientes gráficos muestran el histograma de score por customer. Recordemo
 
 <p align="justify">Finalmente, y como curiosidad, si calculamos el Model Score solo en los customers que anteriormente habian comprado el producto 9991, tenemos un model score de 0.999 (casi 1) y el producto a recomendar és el 9993!</p>  
 
+---
 
+### Conclusiones
+
+<p align="justify">* Los resultados obtenidos son una lista de recomendaciones según la probabilidad de compra. Tratando con un problema de recomendación de productos, nos parece interesante presentar también los 3-4 productos con mayor probabilidad, ya que normalmente en este abordaje las empresas tienen en cuenta más de una opción de recomendación.</p>   
+
+<p align="justify">* Si recomendamos 3-4 productos, en más del 70% de los casos se ofrece el producto comprado a continuación por el cliente.</p> 
+
+<p align="justify">* En nuestra métrica de validación, no se considera solamente acertar o no el primer producto, sino que tiene en cuenta en qué posición de nuestra lista de recomendaciones está el producto que realmente comprará el cliente. Por lo tanto, nos permite valorar también si el producto real está entre las primeras recomendaciones, no solo la primera. Creemos que esta validación se ajusta más a la realidad del mercado estudiado.</p> 
+
+<p align="justify">* Crear un modelo por cluster ha dado mejores resultados que hacer un modelo para todos los clientes. Por lo tanto, buscar características distintivas entre clientes parece ser un buen planteamiento.</p> 
+
+<p align="justify">* La utilización de librerías y plataformas como h2o permite crear, optimizar y evaluar modelos de una manera rápida y sencilla. De esta manera se puede dedicar una parte importante del proceso en estudiar y transformar la base y las variables.</p>   
 
 

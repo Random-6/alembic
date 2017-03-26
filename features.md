@@ -11,7 +11,8 @@ image: "/cajamar_predictive/images/fondo.png"
 
 ### Son todas las variables necesarias?
 
-<p align="justify">Para el modelo que se propone se ha decidido no usar la variable género, ya que por razones éticas no se considera adequada la recomendación de productos basada en diferencias en esta característica.</p> 
+<p align="justify">Se ha decidido no usar la variable género, ya que no se considera adecuada la recomendación de productos basada en diferencias en esta característica. Aunque esta variable pueda dar lugar a resultados mejores, no es ético que se usen modelos basados en diferencias de género entre clientes, ya que va contra las política de igualdad de género actuales.  
+</p> 
 
 
 ### Obtener información con la fecha de compra
@@ -129,6 +130,21 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 <p align="justify">En este caso, el clustering ha dado unos grupos con porcentages de customers más razonables, como se puede apreciar en la siguiente figura. </p>
 {% include figure.html image="/cajamar_predictive/images/fig20.png" position="left" %}
 
+<p align="justify">El análisis exploratorio se hizo con Power BI de Microsoft.</p>
+
+[CajamarPowerBI](https://app.powerbi.com/view?r=eyJrIjoiN2VjYmFhNDktZjUzMy00MjBkLTgxMmItMmRlZWYyZjI2YzBmIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9)
+
+
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2VjYmFhNDktZjUzMy00MjBkLTgxMmItMmRlZWYyZjI2YzBmIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+
+<p align="justify">En los clusters se puede apreciar: </p>
+
+* Grupo de clientes mayores con ingresos medios (cluster 0) .
+* Grupo de clientes más jóvenes y de mediana edad con ingresos medios-bajos (cluster 1). 
+* Grupo de clientes de mediana edad con ingresos medios-altos (cluster 2). 
+* Grupo de clientes  de mediana-alta edad con ingresos altos (cluster 3).
+* El cluster 3 es el que tiene más clientes autónomos. 
+* Mayormente, los grupos de edad más alta tienen también más antigüedad.
 
 ## Conclusiones
 
