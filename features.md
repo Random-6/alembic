@@ -2,8 +2,8 @@
 title: Feature Engineering
 feature_text: |
   Creación de nuevas variables
-feature_image: "/cajamar_predictive/images/fondo.png"
-image: "/cajamar_predictive/images/fondo.png"
+feature_image: "/cajamar_predictive/images/fondo_2.jpg"
+image: "/cajamar_predictive/images/fondo_2.jpg"
 ---
 
 <p align="justify">En este apartado se explican qué variables se introducen en los modelos predictivos y como se han deducido.</p>
@@ -136,7 +136,7 @@ La mayoria de customers tienen aproximadamente un tiempo medio desde la primera 
 
 <!--
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2VjYmFhNDktZjUzMy00MjBkLTgxMmItMmRlZWYyZjI2YzBmIiwidCI6ImEyMzEzY2FiLWIxYzMtNGYzYS1iYjExLTIxNTc0NDdkZGJiNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
---> 
+-->
 
 <p align="justify">En los clusters se puede apreciar: </p>
 
